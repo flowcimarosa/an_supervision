@@ -1,0 +1,11 @@
+<div class="jumbotron" ng-controller="TestCtrl">
+  <h1>{{title}}</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+  <ol class="breadcrumb" ng-repeat="host in hosts">
+    <li>{{host.alias}}</li>
+  </ol>
+</div>

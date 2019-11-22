@@ -1,0 +1,10 @@
+<div class="row " ng-controller="MainCtrl" >
+  <a ng-repeat="host in hosts | unique: 'hostgroup_id'" class="col-lg-2 bureau" ng-class="host.status_host == '1' ? 'colorCritical' : (host.status_host == '2' ? 'colorWarning' : 'colorOK')" ng-href="#{{mainID}}!/idRoom={{host.hostgroup_id}}">
+    <span class="col-lg-12">
+      {{host.alias}}
+    </span>
+    <div class=" topStatusService col-lg-2" ng-repeat="service in services | filter: {hostgroup_id: host.hostgroup_id}">
+      <div class="link tooltip-link" data-toggle="tooltip" data-original-title="Status des services" ng-class="service.current_state == '3' ? 'serviceCritical' : (service.current_state == '2' ? 'serviceWarning' : 'serviceOK')">S</div>
+    </div>
+  </a>
+</div>

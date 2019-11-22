@@ -1,0 +1,73 @@
+<!doctype html>
+<html ng-app="testMonitoringApp">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" src="/styles/main.css">
+    <link rel="stylesheet" src="/styles/css.css">
+  </head>
+  <body>
+
+    <!-- Add your site or application content here -->
+    <div class="row header">
+      <div class="col-lg-1">
+        <a class="btn btn-primary topButonHome" ng-href="#{{main}}">Accueil</a>
+      </div>
+      <div class="col-lg-3 col-lg-offset-3">
+        <h1>{{ title}} {{mainID}}</h1>
+      </div>
+      <div class="col-lg-1 col-lg-offset-2 topLabel greenCircle">
+        <div class="rightLegend">O.K</div>
+      </div>
+      <div class="col-lg-1 topLabel orangeCircle">
+        <div class="rightLegend">Warning</div>
+      </div>
+      <div class="col-lg-1 topLabel redCircle">
+        <div class="rightLegend">Critical</div>
+      </div>
+      <div class="col-lg-1 topLabel serviceLegend">
+        <div class="rightLegend">S : Status des services</div>
+      </div>
+
+    <div class="container-fluid">
+    <div ng-view=""></div>
+    </div>
+
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-1">
+          <img class="imgFooter mLeftimg" src="images/logo_AN.png" alt="">
+        </div>
+        <div class="col-lg-1 col-lg-offset-10">
+          <img class="lastImg" src="images/logo_Videlio.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/bureau.js"></script>
+        <script src="scripts/controllers/service.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

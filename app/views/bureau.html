@@ -1,0 +1,8 @@
+<div class="row" ng-controller="BureauCtrl">
+  <a ng-repeat="host in hosts | filter : {hostgroup_id: roomID}" ng-href="#!/idService={{host.host_object_id}}" class="col-lg-2 bureau" ng-class="host.current_state == '2' ? 'colorWarning' : (host.current_state == '1' ? 'colorCritical' : 'colorOK')">
+    <p>{{host.alias}}</p>
+    <div class="col-lg-2" ng-repeat="service in services | filter : {host_object_id: host.host_object_id}">
+      <div  class="col-lg-6 link tooltip-link" data-toggle="tooltip" data-original-title="Service de l'hôte" ng-class="service.current_state == '3' ? 'serviceRoomCritical' : (service.current_state == '2' ? 'serviceRoomwarning' : 'serviceRoomOK')">S</div>
+    </div>
+  </a>
+</div>

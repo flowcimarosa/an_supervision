@@ -1,0 +1,5 @@
+<div class="row" ng-controller="ServiceCtrl">
+  <div ng-repeat="service in services | filter: {host_object_id: serviceID}" class="col-lg-2 bureau" ng-class="service.current_state == '3' ? 'colorCritical' : (service.current_state == '2' ? 'colorWarning' : 'colorOK')">
+    {{service.display_name}}
+  </div>
+</div>

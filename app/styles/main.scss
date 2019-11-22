@@ -1,0 +1,174 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.container{height: 880px}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+.btnHome{
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.btnHome span.glyphicon-home{
+  margin-right: 5px;
+}
+
+.topLabel{
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.topButonHome{
+  font-size: 15px;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+.greenCircle{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #00ad45;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.rightLegend{
+  margin-left: 20px;
+}
+
+.orangeCircle{
+  font-size: 20px;
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #fb8a2e;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.redCircle{
+  font-size: 20px;
+  margin-left: 90px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #ff322e;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.serviceLegend{
+  font-size: 20px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.hoteLegend{
+  font-size: 20px;
+  margin-left: -40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.imgFooter{
+  width:70%;
+}
+
+.lastImg{
+  width:90%;
+  margin-top:10px;
+}
+
+.mLeftimg{
+  margin-left:20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

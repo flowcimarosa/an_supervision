@@ -1,0 +1,131 @@
+
+.bureau{
+  border-radius: 5px;
+  height: 150px;
+  padding: 2.5% 0;
+  margin-top: 1%;
+  margin-left: 3%;
+  text-align: center;
+  font-size: 1.9em;
+  color: #ffffff;
+  word-wrap: break-word;
+}
+
+/* Couleurs des vérifications des status */
+
+.colorOK{
+  background-color: darken(#2ecc71, 15%);
+}
+
+.colorWarning{
+  background-color: darken(#fb8a2e, 10%);
+}
+
+.colorCritical{
+  background-color: darken(#e74c3c, 15%);
+}
+
+.colorOK:hover{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: darken(#2ecc71, 10%);
+}
+
+.colorWarning:hover{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: darken(#e74c3c, 10%);
+}
+
+.colorCritical:hover{
+  text-decoration: none;
+  color: #ffffff;
+  background-color: darken(#e74c3c, 10%)
+}
+
+.serviceRoomOK{
+  padding: 10%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: darken(#2ecc71, 25%);
+  margin-left: 2%;
+};
+
+.serviceRoomwarning{
+  padding: 10%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: darken(#fb8a2e, 10%);
+  margin-left: 2%;
+}
+
+.serviceRoomCritical{
+  padding: 10%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: darken(#e74c3c, 15%);
+  margin-left: 2%;
+}
+
+.serviceOK{
+  padding: 10%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: darken(#2ecc71, 25%);
+  margin-left: 2%;
+}
+
+.serviceWarning{
+  padding: 10%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: darken(#fb8a2e, 10%);
+  margin-left: 2%;
+}
+
+.serviceCritical{
+  padding: 10%;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: darken(#e74c3c, 5%);
+  margin-left: 2%;
+
+}
+
+.topStatusService{
+  margin-top: 4%;
+}
+
+.label{
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+/* Container-fluid du ng-view */
+.blockMain{
+  margin-bottom: 20%;
+}
